@@ -11,15 +11,19 @@
 
     <title>Chamber Directory | Chamber of Commerce</title>
 
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <link rel="icon" href="images/favicon.ico">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Chamber Directory | Chamber of Commerce">
@@ -27,7 +31,10 @@
         content="Discover and connect with local businesses in the Chamber of Commerce directory.">
     <meta property="og:image" content="https://sanonie.github.io/wdd231/chamber/chamber-social-preview.svg">
     <meta property="og:url" content="https://sanonie.github.io/wdd231/chamber/directory.html">
+
+
     <meta name="twitter:card" content="summary_large_image">
+
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
@@ -43,9 +50,12 @@
                 <img src="images/favicon.svg" width="36" height="36" alt="Chamber logo">
                 <span>Chamber of Commerce</span>
             </a>
-            <button id="menuButton" aria-label="Open navigation" aria-expanded="false"
-                aria-controls="primaryNav">☰</button>
+
+            <button id="menuButton" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav">
+                ☰
+            </button>
         </div>
+
         <nav id="primaryNav" class="navigation" aria-label="Primary navigation">
             <a href="index.html">Home</a>
             <a class="active" href="directory.html" aria-current="page">Directory</a>
@@ -59,10 +69,12 @@
 
         <section class="directory-panel" aria-labelledby="directoryHeading">
             <h2 id="directoryHeading">Chamber Members</h2>
+
             <div class="view-controls" aria-label="Member display options">
                 <button id="gridView" class="active" type="button" aria-pressed="true">Grid</button>
                 <button id="listView" type="button" aria-pressed="false">List</button>
             </div>
+
             <div id="memberContainer" class="members-grid" aria-live="polite"></div>
         </section>
     </main>
@@ -75,12 +87,14 @@
             <p>Email: info@chamber.org</p>
             <p>Phone: +234 (555) 010-2301</p>
         </section>
+
         <section>
             <h2>Development Information</h2>
             <p id="developmentInfo"></p>
             <p id="lastModified"></p>
         </section>
     </footer>
+
 </body>
 
 </html>

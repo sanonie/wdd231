@@ -28,6 +28,11 @@ img {
     height: auto;
 }
 
+
+a {
+    text-decoration: none;
+}
+
 .skip-link {
     position: absolute;
     left: -9999px;
@@ -166,6 +171,7 @@ h1 {
 .members-grid {
     display: grid;
     gap: 0.85rem;
+    grid-template-columns: 1fr;
 }
 
 .members-list {

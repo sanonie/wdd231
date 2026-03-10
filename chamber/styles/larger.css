@@ -1,24 +1,64 @@
-@media (min-width: 48rem) {
+@media only screen and (min-width: 32rem) {
+
+    
     #menuButton {
         display: none;
     }
 
     .navigation {
         display: flex;
-        border-top: 1px solid var(--muted);
+        justify-content: flex-end;
+        border-top: none;
+        gap: 0.5rem;
+        padding: 0 1rem 0.75rem;
     }
 
     .navigation a {
         border-bottom: none;
-        flex: 1;
-        text-align: center;
+        padding: 0.5rem 0.9rem;
+        border-radius: 6px;
     }
 
+    .navigation a:hover {
+        background: var(--accent-soft);
+    }
+
+    
     .members-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    
+    .members-list .member-card {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .members-list .member-card img {
+        max-width: 120px;
+        margin: 0;
     }
 
     .site-footer {
         grid-template-columns: 1fr 1fr;
+        align-items: start;
     }
+}
+
+
+@media only screen and (min-width: 64rem) {
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .site-header,
+    main,
+    .site-footer {
+        width: min(1200px, calc(100% - 3rem));
+    }
+
 }
