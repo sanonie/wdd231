@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Greenleaf Energy logo">
+  <rect width="320" height="180" rx="16" fill="#15803d"/>
+  <circle cx="92" cy="90" r="24" fill="#fff"/>
+  <path d="M92 66l8 18h20l-16 12 6 20-18-12-18 12 6-20-16-12h20z" fill="#15803d"/>
+  <text x="134" y="98" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700">GREENLEAF</text>
+</svg>

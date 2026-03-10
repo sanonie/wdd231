@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Brightline Health logo">
+  <rect width="320" height="180" rx="16" fill="#b42318"/>
+  <rect x="72" y="70" width="48" height="14" fill="#fff"/>
+  <rect x="89" y="53" width="14" height="48" fill="#fff"/>
+  <text x="136" y="98" fill="#fff" font-family="Arial, sans-serif" font-size="19" font-weight="700">BRIGHTLINE</text>
+</svg>

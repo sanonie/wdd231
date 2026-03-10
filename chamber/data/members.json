@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Apex Technologies",
+        "address": "15 Silicon Avenue, Business District",
+        "phone": "+234 (555) 011-1022",
+        "website": "https://example.com/apex-tech",
+        "image": "apex-technologies.svg",
+        "membershipLevel": 3,
+        "industry": "Software & IT Services",
+        "founded": 2014,
+        "tagline": "Smart systems for growing businesses"
+    },
+    {
+        "name": "Harvest Grocers",
+        "address": "8 Market Ring Road, Old Town",
+        "phone": "+234 (555) 011-2015",
+        "website": "https://example.com/harvest-grocers",
+        "image": "harvest-grocers.svg",
+        "membershipLevel": 2,
+        "industry": "Retail & Food",
+        "founded": 2011,
+        "tagline": "Fresh products from local farms"
+    },
+    {
+        "name": "Summit Legal Group",
+        "address": "42 Central Plaza, Suite 6",
+        "phone": "+234 (555) 011-4097",
+        "website": "https://example.com/summit-legal",
+        "image": "summit-legal-group.svg",
+        "membershipLevel": 3,
+        "industry": "Legal Services",
+        "founded": 2008,
+        "tagline": "Trusted legal guidance for enterprises"
+    },
+    {
+        "name": "Bluewave Logistics",
+        "address": "21 Port Access Lane, Trade Zone",
+        "phone": "+234 (555) 011-3154",
+        "website": "https://example.com/bluewave-logistics",
+        "image": "bluewave-logistics.svg",
+        "membershipLevel": 2,
+        "industry": "Transport & Logistics",
+        "founded": 2016,
+        "tagline": "Moving goods with speed and precision"
+    },
+    {
+        "name": "Northstar Builders",
+        "address": "74 Unity Estate, Phase 2",
+        "phone": "+234 (555) 011-7880",
+        "website": "https://example.com/northstar-builders",
+        "image": "northstar-builders.svg",
+        "membershipLevel": 1,
+        "industry": "Construction",
+        "founded": 2010,
+        "tagline": "Building stronger communities"
+    },
+    {
+        "name": "Brightline Health",
+        "address": "6 Wellness Street, Health Hub",
+        "phone": "+234 (555) 011-5568",
+        "website": "https://example.com/brightline-health",
+        "image": "brightline-health.svg",
+        "membershipLevel": 3,
+        "industry": "Healthcare",
+        "founded": 2017,
+        "tagline": "Care that keeps families thriving"
+    },
+    {
+        "name": "Greenleaf Energy",
+        "address": "11 Solar Crescent, Innovation Park",
+        "phone": "+234 (555) 011-6621",
+        "website": "https://example.com/greenleaf-energy",
+        "image": "greenleaf-energy.svg",
+        "membershipLevel": 1,
+        "industry": "Renewable Energy",
+        "founded": 2019,
+        "tagline": "Clean power for modern commerce"
+    }
+]

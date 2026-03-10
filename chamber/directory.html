@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the Chamber of Commerce business directory to find local organizations, services, and community partners.">
+    <meta name="author" content="Sanonie">
+
+    <title>Chamber Directory | Chamber of Commerce</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chamber Directory | Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover and connect with local businesses in the Chamber of Commerce directory.">
+    <meta property="og:image" content="https://example.com/wdd231/chamber/images/chamber-social-preview.svg">
+    <meta property="og:url" content="https://example.com/wdd231/chamber/directory.html">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="top-bar">
+            <a class="brand" href="index.html">
+                <img src="images/favicon.svg" width="36" height="36" alt="Chamber logo">
+                <span>Chamber of Commerce</span>
+            </a>
+            <button id="menuButton" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="primaryNav">☰</button>
+        </div>
+        <nav id="primaryNav" class="navigation" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="directory.html" aria-current="page">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main id="mainContent">
+        <h1>Directory</h1>
+
+        <section class="directory-panel" aria-labelledby="directoryHeading">
+            <h2 id="directoryHeading">Chamber Members</h2>
+            <div class="view-controls" aria-label="Member display options">
+                <button id="gridView" class="active" type="button" aria-pressed="true">Grid</button>
+                <button id="listView" type="button" aria-pressed="false">List</button>
+            </div>
+            <div id="memberContainer" class="members-grid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section>
+            <h2>Contact Information</h2>
+            <p>Chamber of Commerce</p>
+            <p>10 Commerce Street, Business District</p>
+            <p>Email: info@chamber.org</p>
+            <p>Phone: +234 (555) 010-2301</p>
+        </section>
+        <section>
+            <h2>Development Information</h2>
+            <p id="developmentInfo"></p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+
+</html>
