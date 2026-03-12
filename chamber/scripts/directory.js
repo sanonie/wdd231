@@ -27,9 +27,13 @@ function renderMembers(view = "grid") {
 
     memberContainer.innerHTML = members
         .map((member) => {
+            const memberImage = view === "grid"
+                ? `<img src="images/${member.image}" alt="${member.name} logo" loading="lazy" width="320" height="180">`
+                : "";
+
             return `
                 <article class="member-card">
-                    <img src="images/${member.image}" alt="${member.name} logo" loading="lazy" width="320" height="180">
+                    ${memberImage}
                     <h3>${member.name}</h3>
                     <p>${member.address}</p>
                     <p>${member.phone}</p>
