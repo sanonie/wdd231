@@ -18,9 +18,7 @@ function getMembershipLabel(level) {
 }
 
 function renderMembers(view = "grid") {
-    if (!memberContainer) {
-        return;
-    }
+    if (!memberContainer) return;
 
     const wrapperClass = view === "list" ? "members-list" : "members-grid";
     memberContainer.className = wrapperClass;
@@ -40,7 +38,7 @@ function renderMembers(view = "grid") {
                     <p>Membership: ${getMembershipLabel(member.membershipLevel)}</p>
                     <p>Industry: ${member.industry}</p>
                     <p>${member.tagline}</p>
-                    <p><a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website</a></p>
+                    <p><a href="${member.website}" target="_blank">Visit Website</a></p>
                 </article>
             `;
         })

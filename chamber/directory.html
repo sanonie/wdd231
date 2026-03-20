@@ -18,8 +18,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -46,7 +44,7 @@
 
     <header class="site-header">
         <div class="top-bar">
-            <a class="brand" href="index.html">
+            <a class="brand" href="/chamber/index.html">
                 <img src="images/favicon.svg" width="36" height="36" alt="Chamber logo">
                 <span>Chamber of Commerce</span>
             </a>
@@ -57,7 +55,7 @@
         </div>
 
         <nav id="primaryNav" class="navigation" aria-label="Primary navigation">
-            <a href="index.html">Home</a>
+            <a href="/chamber/index.html">Home</a>
             <a class="active" href="directory.html" aria-current="page">Directory</a>
             <a href="join.html">Join</a>
             <a href="discover.html">Discover</a>
@@ -69,14 +67,13 @@
 
         <section class="directory-panel" aria-labelledby="directoryHeading">
             <h2 id="directoryHeading">Chamber Members</h2>
-
             <div class="view-controls" aria-label="Member display options">
                 <button id="gridView" class="active" type="button" aria-pressed="true">Grid</button>
                 <button id="listView" type="button" aria-pressed="false">List</button>
             </div>
-
             <div id="memberContainer" class="members-grid" aria-live="polite"></div>
         </section>
+
     </main>
 
     <footer class="site-footer">

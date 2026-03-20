@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b5ed7">
+    <meta name="description"
+        content="Welcome to the Chamber of Commerce - supporting local business growth and community events.">
+    <meta name="author" content="Chamber Team">
+    <title>Chamber Home | Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chamber Home | Chamber of Commerce">
+    <meta property="og:description" content="Local business support, events, and member spotlights.">
+    <meta property="og:image" content="https://sanonie.github.io/wdd231/chamber/chamber-social-preview.svg">
+
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="top-bar">
+            <a class="brand" href="/chamber/index.html">
+                <img src="images/favicon.svg" width="36" height="36" alt="Chamber logo">
+                <span>Chamber of Commerce</span>
+            </a>
+
+            <button id="menuButton" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav">
+                ☰
+            </button>
+        </div>
+
+        <nav id="primaryNav" class="navigation" aria-label="Primary navigation">
+            <a class="active" href="/chamber/index.html" aria-current="page">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <h2> In Progress</h2>
+    </main>
+</body>
+<footer class="site-footer">
+    <section>
+        <h2>Contact Information</h2>
+        <p>Chamber of Commerce</p>
+        <p>10 Commerce Street, Business District</p>
+        <p>Email: info@chamber.org</p>
+        <p>Phone: +234 (555) 010-2301</p>
+    </section>
+
+    <section>
+        <h2>Development Information</h2>
+        <p id="developmentInfo"></p>
+        <p id="lastModified"></p>
+    </section>
+</footer>
+
+</html>
