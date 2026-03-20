@@ -39,12 +39,11 @@ async function fetchWeather() {
         const cur = await curRes.json();
         const fdata = await fRes.json();
 
-        // Current
+
         const temp = Math.round(cur.main.temp);
         const desc = cur.weather?.[0]?.description || '';
         if (currentEl) currentEl.innerHTML = `<strong>${temp}°</strong> — ${desc}`;
 
-        // Forecast: gather next 3 calendar days (skip today)
         const days = {};
         const todayStr = new Date().toDateString();
         for (const item of fdata.list) {
