@@ -1,0 +1,50 @@
+export const discoverPlaces = [
+    {
+        "title": "Harborview Commons",
+        "image": "images/harborview-commons.jpg",
+        "address": "21 Harbor Drive, North Harbor District",
+        "description": "A vibrant waterfront destination with artisan shops, seasonal markets, and a thriving hospitality scene for visitors and new businesses."
+    },
+    {
+        "title": "Northbridge Business Campus",
+        "image": "images/northbridge-business-campus.jpg",
+        "address": "115 Commerce Lane, North Harbor District",
+        "description": "A flexible workspace cluster with modern offices, conference rooms, and a strong support network for startups and chamber members."
+    },
+    {
+        "title": "Riverfront Amphitheater",
+        "image": "images/riverfront-amphitheatre.jpg",
+        "address": "2 Riverbank Road, East Quay",
+        "description": "An outdoor venue hosting concerts, festivals, and public events that draw visitors from across the region year-round."
+    },
+    {
+        "title": "Greenway Trail",
+        "image": "images/greenway-trail.jpg",
+        "address": "300 Greenway Avenue, North Harbor District",
+        "description": "A scenic walking and biking corridor lined with parks, public art, and green spaces that connect neighborhoods and businesses."
+    },
+    {
+        "title": "Heritage Museum",
+        "image": "images/heritage-museum.jpg",
+        "address": "77 Old Mill Street, Historic Quarter",
+        "description": "A cultural anchor for the community featuring local history exhibits, educational programs, and exhibition rental space."
+    },
+    {
+        "title": "Summit Marketplace",
+        "image": "images/summit-marketplace.jpg",
+        "address": "450 Market Street, Downtown",
+        "description": "A polished shopping destination with restaurants, specialty retailers, and a welcoming environment for visitors and new members."
+    },
+    {
+        "title": "Artisan Alley",
+        "image": "images/artisan-alley.jpg",
+        "address": "16 Creative Way, Arts District",
+        "description": "A small-business incubator for craftspeople, designers, and food artisans that highlights local entrepreneurship and culture."
+    },
+    {
+        "title": "Solar Plaza Business Hub",
+        "image": "images/solar-plaza.jpg",
+        "address": "88 Innovation Boulevard, Tech Park",
+        "description": "A future-focused commercial destination with coworking space, innovation labs, and sustainability-focused companies."
+    }
+];

@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0b5ed7">
     <meta name="description"
-        content="Welcome to the Chamber of Commerce - supporting local business growth and community events.">
+        content="Discover the North Harbor District: community destinations, culture, and local business energy for visitors and prospective chamber members.">
     <meta name="author" content="Chamber Team">
-    <title>Chamber Home | Chamber of Commerce</title>
+    <title>Discover the Area | Chamber of Commerce</title>
     <link rel="icon" href="images/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +19,265 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Chamber Home | Chamber of Commerce">
-    <meta property="og:description" content="Local business support, events, and member spotlights.">
+    <meta property="og:title" content="Discover the Area | Chamber of Commerce">
+    <meta property="og:description"
+        content="Explore the highlights of the Chamber region with local destinations, attractions, and business-friendly amenities.">
     <meta property="og:image" content="https://sanonie.github.io/wdd231/chamber/chamber-social-preview.svg">
 
-    <script src="scripts/config.js" defer></script>
+    <style>
+        .discover-panel {
+            display: grid;
+            gap: 1.2rem;
+            margin: 1rem 0;
+            grid-template-areas:
+                "intro"
+                "stats"
+                "visit"
+                "gallery";
+        }
+
+        .discover-intro,
+        .discover-stats,
+        .visit-panel,
+        .discover-card {
+            background: var(--surface);
+            border: 1px solid var(--muted);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .discover-intro,
+        .discover-stats,
+        .visit-panel {
+            padding: 1.25rem;
+        }
+
+        .discover-intro {
+            grid-area: intro;
+        }
+
+        .discover-stats {
+            grid-area: stats;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+        }
+
+        .visit-panel {
+            grid-area: visit;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .visit-panel p {
+            margin: 0;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .visit-panel button {
+            border: none;
+            background: transparent;
+            color: var(--ink);
+            font-size: 0.95rem;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .visit-panel.hidden {
+            display: none;
+        }
+
+        .discover-gallery {
+            grid-area: gallery;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "item1"
+                "item2"
+                "item3"
+                "item4"
+                "item5"
+                "item6"
+                "item7"
+                "item8";
+        }
+
+        .discover-card {
+            padding: 1rem;
+            display: grid;
+            gap: 0.9rem;
+        }
+
+        .place-1 {
+            grid-area: item1;
+        }
+
+        .place-2 {
+            grid-area: item2;
+        }
+
+        .place-3 {
+            grid-area: item3;
+        }
+
+        .place-4 {
+            grid-area: item4;
+        }
+
+        .place-5 {
+            grid-area: item5;
+        }
+
+        .place-6 {
+            grid-area: item6;
+        }
+
+        .place-7 {
+            grid-area: item7;
+        }
+
+        .place-8 {
+            grid-area: item8;
+        }
+
+        .discover-card h2 {
+            margin: 0;
+            font-size: 1.15rem;
+        }
+
+        .discover-card figure {
+            margin: 0;
+            overflow: hidden;
+            border-radius: 14px;
+            aspect-ratio: 16 / 9;
+            min-height: 0;
+        }
+
+        .discover-card img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 250ms ease, filter 250ms ease;
+        }
+
+        .discover-card address {
+            font-style: normal;
+            color: #475066;
+            line-height: 1.4;
+        }
+
+        .discover-card p {
+            margin: 0;
+            color: #4f5e79;
+        }
+
+        .discover-card button {
+            border: 1px solid var(--accent);
+            background: #fff;
+            color: var(--accent);
+            border-radius: 999px;
+            padding: 0.75rem 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            font-weight: 700;
+            cursor: pointer;
+            justify-self: start;
+        }
+
+        .discover-card button:hover,
+        .discover-card button:focus-visible {
+            background: var(--accent-soft);
+        }
+
+        .stat-item {
+            background: #f7faff;
+            border: 1px solid #d6e8ff;
+            border-radius: 14px;
+            padding: 1rem;
+        }
+
+        .stat-item h3 {
+            margin: 0 0 0.35rem;
+            font-size: 1.05rem;
+        }
+
+        .stat-item p {
+            margin: 0;
+            color: #4b5e79;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        @media only screen and (min-width: 40rem) {
+            .discover-panel {
+                grid-template-columns: 2fr 1fr;
+                grid-template-areas:
+                    "intro stats"
+                    "visit visit"
+                    "gallery gallery";
+            }
+
+            .discover-stats {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .discover-gallery {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-template-areas:
+                    "item1 item2"
+                    "item3 item4"
+                    "item5 item6"
+                    "item7 item8";
+            }
+        }
+
+        @media only screen and (min-width: 64rem) {
+            .discover-panel {
+                grid-template-columns: 1.5fr 1fr;
+                grid-template-areas:
+                    "intro stats"
+                    "visit gallery";
+            }
+
+            .discover-gallery {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                grid-template-areas:
+                    "item1 item1 item2 item3"
+                    "item4 item5 item5 item6"
+                    "item7 item7 item8 item6";
+            }
+        }
+
+        @media (hover: hover) {
+            .discover-card img:hover {
+                transform: scale(1.04);
+                filter: saturate(1.08) brightness(1.02);
+            }
+        }
+    </style>
+
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/home.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
 </head>
 
 <body>
+    <a class="skip-link" href="#mainContent">Skip to main content</a>
 
     <header class="site-header">
         <div class="top-bar">
@@ -44,30 +292,70 @@
         </div>
 
         <nav id="primaryNav" class="navigation" aria-label="Primary navigation">
-            <a class="active" href="/chamber/index.html" aria-current="page">Home</a>
+            <a href="/chamber/index.html">Home</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
-            <a href="discover.html">Discover</a>
+            <a class="active" href="discover.html" aria-current="page">Discover</a>
         </nav>
     </header>
-    <main>
-        <h2> In Progress</h2>
-    </main>
-</body>
-<footer class="site-footer">
-    <section>
-        <h2>Contact Information</h2>
-        <p>Chamber of Commerce</p>
-        <p>10 Commerce Street, Business District</p>
-        <p>Email: info@chamber.org</p>
-        <p>Phone: +234 (555) 010-2301</p>
-    </section>
 
-    <section>
-        <h2>Development Information</h2>
-        <p id="developmentInfo"></p>
-        <p id="lastModified"></p>
-    </section>
-</footer>
+    <main id="mainContent">
+        <section class="discover-panel">
+            <div class="discover-intro">
+                <h1>Discover the North Harbor District</h1>
+                <p>Explore the region that makes our chamber community strong. This district blends historic charm,
+                    modern business energy, and visitor-friendly amenities for residents, entrepreneurs, and guests.</p>
+            </div>
+
+            <section class="discover-stats" aria-labelledby="discoverStatsHeading">
+                <h2 id="discoverStatsHeading" class="visually-hidden">Area highlights</h2>
+                <div class="stat-item">
+                    <h3>8 Key Destinations</h3>
+                    <p>From waterfront attractions to innovation hubs, the district supports diverse member businesses
+                        and visitor experiences.</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4,500+ Employees</h3>
+                    <p>A growing local workforce with strong customer traffic for retail, hospitality, and service
+                        organizations.</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Year-Round Events</h3>
+                    <p>Festivals, markets, and cultural celebrations bring visitors and media attention to the area.</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Easy Access</h3>
+                    <p>Walkable streets, riverfront promenades, and regional transit make the district convenient for
+                        members and guests.</p>
+                </div>
+            </section>
+
+            <section class="visit-panel" aria-live="polite">
+                <p id="visitMessage">Loading your visit details...</p>
+                <button id="closeVisitMessage" type="button" aria-label="Close visit message">Close</button>
+            </section>
+
+            <section class="discover-gallery" id="discoverGallery" aria-labelledby="galleryHeading">
+                <h2 id="galleryHeading" class="visually-hidden">Area destinations</h2>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section>
+            <h2>Contact Information</h2>
+            <p>Chamber of Commerce</p>
+            <p>10 Commerce Street, Business District</p>
+            <p>Email: info@chamber.org</p>
+            <p>Phone: +234 (555) 010-2301</p>
+        </section>
+
+        <section>
+            <h2>Development Information</h2>
+            <p id="developmentInfo"></p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
 
 </html>
