@@ -1,0 +1,184 @@
+[
+    {
+        "id": 1,
+        "title": "Margherita Pizza",
+        "image": "images/pizza-recipe.jpg",
+        "description": "A classic Neapolitan pizza with fresh mozzarella and basil.",
+        "calories": 310,
+        "cuisine": "Italian",
+        "diet": [
+            "Vegetarian"
+        ],
+        "url": "https://www.example.com/margherita-pizza"
+    },
+    {
+        "id": 2,
+        "title": "Cheeseburger Deluxe",
+        "image": "images/burger-recipe.jpg",
+        "description": "Juicy beef burger with cheddar, caramelized onions, and a toasted bun.",
+        "calories": 540,
+        "cuisine": "American",
+        "diet": [
+            "Gluten"
+        ],
+        "url": "https://www.example.com/cheeseburger-deluxe"
+    },
+    {
+        "id": 3,
+        "title": "Creamy Garlic Pasta",
+        "image": "images/pasta-recipe.jpg",
+        "description": "Comforting pasta in a rich garlic cream sauce with Parmesan.",
+        "calories": 420,
+        "cuisine": "Italian",
+        "diet": [
+            "Vegetarian"
+        ],
+        "url": "https://www.example.com/creamy-garlic-pasta"
+    },
+    {
+        "id": 4,
+        "title": "Rainbow Salad",
+        "image": "images/healthy-salad.jpg",
+        "description": "Fresh greens, crunchy vegetables, and a tangy lemon vinaigrette.",
+        "calories": 180,
+        "cuisine": "Mediterranean",
+        "diet": [
+            "Vegan",
+            "Gluten-Free"
+        ],
+        "url": "https://www.example.com/rainbow-salad"
+    },
+    {
+        "id": 5,
+        "title": "Grilled Steak Guide",
+        "image": "images/steak-recipe.jpg",
+        "description": "Perfectly grilled steak with herb butter and roasted vegetables.",
+        "calories": 670,
+        "cuisine": "American",
+        "diet": [
+            "High-Protein"
+        ],
+        "url": "https://www.example.com/grilled-steak"
+    },
+    {
+        "id": 6,
+        "title": "Decadent Dessert Bowl",
+        "image": "images/desserts-recipe.jpg",
+        "description": "A delicious dessert bowl with berries, chocolate, and whipped cream.",
+        "calories": 380,
+        "cuisine": "Dessert",
+        "diet": [
+            "Vegetarian"
+        ],
+        "url": "https://www.example.com/decadent-dessert-bowl"
+    },
+    {
+        "id": 7,
+        "title": "Creamy Tomato Soup",
+        "image": "images/creamy-tomato-soup.jpg",
+        "description": "Warm tomato soup finished with fresh herbs and a swirl of cream.",
+        "calories": 190,
+        "cuisine": "Comfort Food",
+        "diet": [
+            "Vegetarian"
+        ],
+        "url": "https://www.example.com/creamy-tomato-soup"
+    },
+    {
+        "id": 8,
+        "title": "Sunny Breakfast Toast",
+        "image": "images/breakfast-ideas.jpg",
+        "description": "Avocado toast topped with eggs, seeds, and bright citrus.",
+        "calories": 290,
+        "cuisine": "Breakfast",
+        "diet": [
+            "Vegetarian"
+        ],
+        "url": "https://www.example.com/sunny-breakfast-toast"
+    },
+    {
+        "id": 9,
+        "title": "Mediterranean Quinoa Salad",
+        "image": "images/healthy-salad.jpg",
+        "description": "Protein-rich quinoa combined with olives, tomatoes, and feta.",
+        "calories": 330,
+        "cuisine": "Mediterranean",
+        "diet": [
+            "Gluten-Free"
+        ],
+        "url": "https://www.example.com/mediterranean-quinoa-salad"
+    },
+    {
+        "id": 10,
+        "title": "Loaded Mushroom Burger",
+        "image": "images/burger-recipe.jpg",
+        "description": "A savory mushroom burger with melted Swiss cheese and aioli.",
+        "calories": 500,
+        "cuisine": "American",
+        "diet": [
+            "Vegetarian"
+        ],
+        "url": "https://www.example.com/loaded-mushroom-burger"
+    },
+    {
+        "id": 11,
+        "title": "Zesty Lemon Pasta",
+        "image": "images/pasta-recipe.jpg",
+        "description": "Light pasta tossed with lemon, herbs, and shaved Parmesan.",
+        "calories": 350,
+        "cuisine": "Italian",
+        "diet": [
+            "Vegetarian"
+        ],
+        "url": "https://www.example.com/zesty-lemon-pasta"
+    },
+    {
+        "id": 12,
+        "title": "Spicy Breakfast Burrito",
+        "image": "images/breakfast-ideas.jpg",
+        "description": "A warm breakfast wrap with eggs, beans, avocado, and salsa.",
+        "calories": 410,
+        "cuisine": "Mexican",
+        "diet": [
+            "Vegetarian"
+        ],
+        "url": "https://www.example.com/spicy-breakfast-burrito"
+    },
+    {
+        "id": 13,
+        "title": "Herbed Steak Salad",
+        "image": "images/steak-recipe.jpg",
+        "description": "Slices of steak over crisp greens with a balsamic glaze.",
+        "calories": 390,
+        "cuisine": "American",
+        "diet": [
+            "High-Protein"
+        ],
+        "url": "https://www.example.com/herbed-steak-salad"
+    },
+    {
+        "id": 14,
+        "title": "Sweet Berry Parfait",
+        "image": "images/desserts-recipe.jpg",
+        "description": "Layers of Greek yogurt, granola, and fresh berries.",
+        "calories": 220,
+        "cuisine": "Breakfast",
+        "diet": [
+            "Vegetarian"
+        ],
+        "url": "https://www.example.com/sweet-berry-parfait"
+    },
+    {
+        "id": 15,
+        "title": "Roasted Vegetable Soup",
+        "image": "images/roasted-vegetable-soup.jpg",
+        "description": "Seasonal roasted vegetables simmered into a cozy soup.",
+        "calories": 210,
+        "cuisine": "Comfort Food",
+        "diet": [
+            "Vegan",
+            "Gluten-Free"
+        ],
+        "url": "https://www.example.com/roasted-vegetable-soup"
+    }
+]

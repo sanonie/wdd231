@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Recipe Menu</title>
+    <meta name="description" content="Discover easy and inspiring recipes with a responsive mobile-first experience.">
+    <meta name="author" content="Sanonie">
+    <meta property="og:title" content="Recipe Menu | Home">
+    <meta property="og:description" content="Explore recipes, save searches, and preview delicious meal ideas.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/scripts.js" defer></script>
+    <script type="module" src="scripts/recipe-app.js"></script>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <a class="brand" href="index.html">Recipe Menu</a>
+            <button id="menuButton" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="primaryNav">☰</button>
+        </div>
+        <nav id="primaryNav" class="navigation" aria-label="Primary navigation">
+            <a class="active" href="index.html" aria-current="page">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact us</a>
+            <label class="sr-only" for="searchInput">Search recipes</label>
+            <input type="text" id="searchInput" placeholder="Search recipes..." aria-label="Search recipes">
+            <button id="searchButton" type="button">Search</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Final Project</p>
+                <h1>Recipe inspiration for every meal.</h1>
+                <p>Browse locally stored recipe cards, search by keyword, and open detailed instructions in a modal.</p>
+            </div>
+        </section>
+
+        <section class="recipes-section" aria-labelledby="recipesHeading">
+            <div class="recipes-header">
+                <div>
+                    <h2 id="recipesHeading">Featured Recipes</h2>
+                    <p id="searchStatus" class="search-status">Loading recipes…</p>
+                </div>
+            </div>
+
+            <div id="recipes" class="recipes-container"></div>
+        </section>
+    </main>
+
+    <dialog id="recipeModal" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+        <div class="modal-content">
+            <button id="modalClose" class="modal-close" aria-label="Close details">×</button>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody"></div>
+        </div>
+    </dialog>
+
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

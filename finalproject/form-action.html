@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review the values submitted through the Recipe Menu contact form.">
+    <meta name="author" content="Sanonie">
+    <meta property="og:title" content="Form Submission | Recipe Menu">
+    <meta property="og:description"
+        content="A confirmation page showing the contact form details submitted by the user.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <title>Contact Submission</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <a class="brand" href="index.html">Recipe Menu</a>
+            <button id="menuButton" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="primaryNav">☰</button>
+        </div>
+        <nav id="primaryNav" class="navigation" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Contact Submission</h1>
+            <p>Your form data is shown below for review. Use the link to return to the contact page if you need to make
+                changes.</p>
+            <div class="form-action-card">
+                <ul id="formResults" class="form-results"></ul>
+            </div>
+            <a class="button" href="contact.html">Edit contact submission</a>
+        </section>
+    </main>
+
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/form-action.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
+</body>
+
+</html>

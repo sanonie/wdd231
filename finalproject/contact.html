@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Recipe Menu</title>
+    <meta name="description" content="Send a message to Recipe Menu and review the form submission on a separate page.">
+    <meta name="author" content="Sanonie">
+    <meta property="og:title" content="Recipe Menu | Contact">
+    <meta property="og:description" content="Contact Recipe Menu to share feedback, requests, and recipe ideas.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <a class="brand" href="index.html">Recipe Menu</a>
+            <button id="menuButton" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="primaryNav">☰</button>
+        </div>
+        <nav id="primaryNav" class="navigation" aria-label="Primary navigation">
+            <a class="active" href="index.html" aria-current="page">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="contact-form">
+                <h1>Send a Message</h1>
+                <p>Use this form to send a message and review the submitted values on a separate action page.</p>
+                <form action="form-action.html" method="get">
+                    <label for="contactName">Your Name</label>
+                    <input id="contactName" name="name" type="text" placeholder="Your Name" required>
+
+                    <label for="contactEmail">Your Email</label>
+                    <input id="contactEmail" name="email" type="email" placeholder="Your Email" required>
+
+                    <label for="contactMessage">Your Message</label>
+                    <textarea id="contactMessage" name="message" rows="5" placeholder="Your Message"
+                        required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <aside class="contact-info">
+                <h2>My Address</h2>
+                <p><strong>Name:</strong> <span id="name"></span></p>
+                <p><strong>Address:</strong> <span id="address"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Phone:</strong> <span id="phone"></span></p>
+
+                <h3>Opening Hours</h3>
+                <p id="hours"></p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

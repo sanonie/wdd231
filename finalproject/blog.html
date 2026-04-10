@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Recipe Menu</title>
+    <meta name="description" content="Discover recipe ideas and food blog stories from the Recipe Menu website.">
+    <meta name="author" content="Sanonie">
+    <meta property="og:title" content="Recipe Menu | Blog">
+    <meta property="og:description"
+        content="Read recipe news, cooking inspiration, and seasonal ideas on our food blog.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <a class="brand" href="index.html">🍽️ Recipe Menu</a>
+            <button id="menuButton" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="primaryNav">☰</button>
+        </div>
+
+        <nav id="primaryNav" class="navigation" aria-label="Primary navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-intro">
+            <h1>Recipe Blog</h1>
+            <p>Read through curated recipe notes, seasonal menu ideas, and step-by-step inspiration.</p>
+        </section>
+
+        <h2 id="blogHeading" class="sr-only">Recipe blog posts</h2>
+        <section class="blog-container" aria-labelledby="blogHeading">
+
+            <article class="card">
+                <img src="images/pizza-recipe.jpg" alt="Pizza Recipe" loading="lazy" width="300" height="200">
+                <div class="card-content">
+                    <h3>Pizza Recipe</h3>
+                    <p>Learn how to make delicious homemade pizza.</p>
+                    <a class="button" href="https://thefoodcharlatan.com/homemade-pizza-recipe/" target="_blank"
+                        rel="noopener noreferrer">Read More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/burger-recipe.jpg" alt="Burger Recipe" loading="lazy" width="300" height="200">
+                <div class="card-content">
+                    <h3>Burger Recipe</h3>
+                    <p>Juicy burgers made simple and tasty.</p>
+                    <a class="button" href="https://www.aspicyperspective.com/best-hamburger-patty-recipe/"
+                        target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/pasta-recipe.jpg" alt="Pasta Recipe" loading="lazy" width="300" height="200">
+                <div class="card-content">
+                    <h3>Pasta Recipe</h3>
+                    <p>Creamy pasta in under 20 minutes.</p>
+                    <a class="button"
+                        href="https://www.177milkstreet.com/stories/01-2025-27-best-pasta-recipes-any-night"
+                        target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/breakfast-ideas.jpg" alt="Breakfast Ideas" loading="lazy" width="300" height="200">
+                <div class="card-content">
+                    <h3>Breakfast Ideas</h3>
+                    <p>Start your day right.</p>
+                    <a class="button"
+                        href="https://www.thepioneerwoman.com/food-cooking/meals-menus/a70609658/cozy-breakfast-ideas/l"
+                        target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/healthy-salad.jpg" alt="Healthy Salad" loading="lazy" width="300" height="200">
+                <div class="card-content">
+                    <h3>Healthy Salad</h3>
+                    <p>Fresh and healthy salad ideas.</p>
+                    <a class="button" href="https://www.averiecooks.com/twelve-superfoods-salad/" target="_blank"
+                        rel="noopener noreferrer">Read More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/steak-recipe.jpg" alt="Steak Guide" loading="lazy" width="300" height="200">
+                <div class="card-content">
+                    <h3>Steak Guide</h3>
+                    <p>Cook steak like a professional chef.</p>
+                    <a class="button"
+                        href="https://www.aglassofredwine.com/the-essential-guide-to-cooking-the-perfect-steak/"
+                        target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/desserts-recipe.jpg" alt="Desserts" loading="lazy" width="300" height="200">
+                <div class="card-content">
+                    <h3>Desserts</h3>
+                    <p>Sweet treats you’ll love.</p>
+                    <a class="button" href="https://www.recipetineats.com/category/dessert-recipes/" target="_blank"
+                        rel="noopener noreferrer">Read More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/soup-recipes.jpg" alt="Soup Recipes" loading="lazy" width="300" height="200">
+                <div class="card-content">
+                    <h3>Soup Recipes</h3>
+                    <p>Warm and comforting soups.</p>
+                    <a class="button" href="https://www.loveandlemons.com/soup-recipes/" target="_blank"
+                        rel="noopener noreferrer">Read More</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Food Blog</p>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
